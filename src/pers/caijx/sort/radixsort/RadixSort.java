@@ -12,20 +12,6 @@ import java.util.List;
  */
 public class RadixSort {
 
-    public static void main(String[] args) {
-        int[] a = {49, 38, 65, 97, 176, 213, 227, 49, 78, 34, 12, 164, 11, 18, 1};
-        System.out.println("排序之前：");
-        for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i] + " ");
-        }
-        //基数排序
-        sort(a);
-        System.out.println("排序之后：");
-        for (int i = 0; i < a.length; i++) {
-            System.out.print(a[i] + " ");
-        }
-    }
-
     private static void sort(int[] array) {
         //找到最大数，确定要排序几趟
         int max = 0;
@@ -65,4 +51,19 @@ public class RadixSort {
             }
         }
     }
+
+    public static void main(String[] args) {
+        int[] a = {49, 38, 65, 97, 176, 213, 227, 49, 78, 34, 12, 164, 11, 18, 1};
+        System.out.println("排序之前：");
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+        //基数排序
+        sort(a);
+        System.out.println("排序之后：");
+        for (int i = 0; i < a.length; i++) {
+            System.out.print(a[i] + " ");
+        }
+    }
+
 }
